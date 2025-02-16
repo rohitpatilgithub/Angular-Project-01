@@ -81,4 +81,8 @@ export class TasksComponent implements OnInit {
       describe: '',
     };
   }
+  
+  deleteTask(index: number) {
+    this.inputTask.splice(index, 1);
+  }
 }

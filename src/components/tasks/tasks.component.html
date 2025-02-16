@@ -11,7 +11,7 @@
             <div class="contains">
                 <p>Task : {{inputTask[$index].task}}</p>
                 <span>Desc : {{inputTask[$index].describe}}</span>
-                <button>Delete</button>
+                <button (click)="deleteTask($index)">Delete</button>
             </div>
         }
     </div>
