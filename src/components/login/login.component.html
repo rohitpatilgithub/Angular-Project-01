@@ -1,0 +1,16 @@
+<div class="container">
+        <form action="" id="form1">
+            <h2>Create User</h2>
+            <input type="text" [(ngModel)]="newUser.name" name="name" placeholder="Name" required>
+            <input type="text" [(ngModel)]="newUser.email" name="email" placeholder="Email" required>
+            <input type="text" [(ngModel)]="newUser.password" name="password" placeholder="Password" required>
+            <button type="submit" (click)="createDetails()">Create</button>
+        </form>
+        <form action="" id="form2">
+            <h2>Login</h2>
+            <input type="text" [(ngModel)]="login.name" name="name" placeholder="Name" required>
+            <input type="text" [(ngModel)]="login.password" name="password" placeholder="Password" required>
+            <button type="submit" (click)="onLogIn()">Log in</button>
+            <button type="submit" (click)="resetLogin()">Reset</button>
+        </form>
+</div>

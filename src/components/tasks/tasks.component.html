@@ -1,0 +1,18 @@
+<div id="container">
+    <form>
+        <h2>CREATE TASK</h2>
+        <input id="tas" type="text" [(ngModel)]="inpValue.task" name="task" placeholder="Task" required>
+        <input id="desc" type="text" [(ngModel)]="inpValue.describe" name="describe" placeholder="Describe" required>
+        <button type="submit" (click)="generateTask()">Create task</button>
+    </form>
+    <div id="box">
+        @for (item of inputTask; track $index)
+        {
+            <div class="contains">
+                <p>Task : {{inputTask[$index].task}}</p>
+                <span>Desc : {{inputTask[$index].describe}}</span>
+                <button>Delete</button>
+            </div>
+        }
+    </div>
+</div>
